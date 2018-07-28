@@ -1,8 +1,8 @@
-{
+/{
   "name": "website-exercise-1",
   "version": "1.0.0",
   "description": "This is a repository for exercising html and sass.",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/suusan11/website-exercise-1.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/suusan11/website-exercise-1/issues"
   },
-  "homepage": "https://github.com/suusan11/website-exercise-1#readme"
+  "homepage": "https://github.com/suusan11/website-exercise-1#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
 }
