@@ -2,7 +2,7 @@
   "name": "website-exercise-1",
   "version": "1.0.0",
   "description": "This is a repository for exercising html and sass.",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "scripts": {
     "gulp": "gulp",
     "build": "gulp build",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/suusan11/website-exercise-1.git"
   },
   "keywords": [],
-  "author": "miiiiiiiiiiie",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/suusan11/website-exercise-1/issues"
