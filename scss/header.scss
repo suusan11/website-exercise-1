@@ -1,0 +1,57 @@
+header {
+	width: 80%;
+	background-color: $background-color-front;
+	margin-top: 38px;
+
+	.icon {
+		position: absolute;
+		top: 20%;
+		left: 20%;
+	}
+
+	.header-nav {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 600px;
+		height: 30px;
+		margin: 0 auto;
+		padding: 0;
+
+		li {
+			position: relative;
+
+			a {
+				display: block;
+				width: 170px;
+				height: 60px;
+				text-align: center;
+				color: $font-color-black;
+				background-color: $background-color-front;
+				transition: 0.5s;
+			}
+		}
+
+		li :hover > a {
+			color: $font-color-white;
+			background-color: $background-color-back;
+		}
+
+		li ul {
+			top: 40px;
+			left: -40px;
+			position: absolute;
+
+			li {
+				overflow: hidden;
+				height: 0;
+				transition: 0.2s;
+
+				a {
+					border-top: 3px solid $background-color-back;
+				}
+			}
+		}
+
+	}
+}

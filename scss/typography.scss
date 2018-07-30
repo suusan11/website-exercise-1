@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Allura');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+$sans-base: 'Open+Sans', sans-serif;
+$sans-empha: 'Allura', serif;
+$serif: 'Lato', serif;
+
+html {
+	font-family: $sans-base;
+	font-size: 100%;
+	line-height: 1.2;
+	font-weight: 400;
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-variant-ligatures: common-ligatures;
+	font-size: 20px;
+}
+
+
+::selection {
+	color: white;
+	background: black;
+}
