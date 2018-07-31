@@ -2,27 +2,30 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="scss/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<title>British restaurant</title>
 </head>
 <body>
 	
 <header>
-	<img class="icon" src="img/cutlery-cross-couple-of-fork-and-spoon.png" alt="">
-	<nav class="header-nav">
-		<ul>
-			<li><a href="#">HOME</a></li>
-			<li><a href="#">MENU</a>
-				<ul>
-					<li><a href="#">Lunch</a></li>
-					<li><a href="#">Dinner</a></li>
-					<li><a href="#">Drink</a></li>
-				</ul>
-			</li>
-			<li><a href="#">ACCESS</a></li>
-			<li><a href="#">CONTACT</a></li>
-		</ul>
-	</nav>
+	<div class="wrapper-header">
+		<img class="icon" src="img/cutlery-cross-couple-of-fork-and-spoon.png" alt="">
+		<nav class="header-nav">
+			<ul class="header-nav lists">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">MENU</a>
+					<ul>
+						<li><a href="#">Lunch</a></li>
+						<li><a href="#">Dinner</a></li>
+						<li><a href="#">Drink</a></li>
+					</ul>
+				</li>
+				<li><a href="#">ACCESS</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>
 
 <div class="wrapper">
@@ -35,69 +38,69 @@
 </div>
 
 <div class="wrapper">
-<section>
+<section class="menu">
 	<h1>Menu</h1>
-	<div class="menu lunch">
+	<div class="lunch">
 		<h2>Lunch</h2>
-		<div class="menu-item">
+		<div class="lunch item">
 			<h3>Fish and Chips</h3>
 			<h3>one piece 15 | two pice 19</h3>
 			<p>west coast ling cod, ale battered,house-made tartar sauce</p>
 		</div>
-		<div class="menu-item">
+		<div class="lunch item">
 			<h3>Fish and Chips</h3>
 			<h3>one piece 15 | two pice 19</h3>
 			<p>west coast ling cod, ale battered,house-made tartar sauce</p>
 		</div>
-		<div class="menu-item">
+		<div class="lunch item">
 			<h3>Fish and Chips</h3>
 			<h3>one piece 15 | two pice 19</h3>
 			<p>west coast ling cod, ale battered,house-made tartar sauce</p>
 		</div>
-		<div class="menu-item">
+		<div class="lunch item">
 			<h3>Fish and Chips</h3>
 			<h3>one piece 15 | two pice 19</h3>
 			<p>west coast ling cod, ale battered,house-made tartar sauce</p>
 		</div>
-		<div class="menu-item">
+		<div class="lunch item">
 			<h3>Fish and Chips</h3>
 			<h3>one piece 15 | two pice 19</h3>
 			<p>west coast ling cod, ale battered,house-made tartar sauce</p>
 		</div>
 	</div>
 
-	<div class="menu dinner">
+	<div class="dinner">
 		<h2>Dinner</h2>
-		<div class="menu-item">
+		<div class="dinner item">
 			<h3>Fish and Chips</h3>
 			<h3>one piece 15 | two pice 19</h3>
 			<p>west coast ling cod, ale battered,house-made tartar sauce</p>
 		</div>
-		<div class="menu-item">
+		<div class="dinner item">
 			<h3>Fish and Chips</h3>
 			<h3>one piece 15 | two pice 19</h3>
 			<p>west coast ling cod, ale battered,house-made tartar sauce</p>
 		</div>
-		<div class="menu-item">
+		<div class="dinner item">
 			<h3>Fish and Chips</h3>
 			<h3>one piece 15 | two pice 19</h3>
 			<p>west coast ling cod, ale battered,house-made tartar sauce</p>
 		</div>
-		<div class="menu-item">
+		<div class="dinner item">
 			<h3>Fish and Chips</h3>
 			<h3>one piece 15 | two pice 19</h3>
 			<p>west coast ling cod, ale battered,house-made tartar sauce</p>
 		</div>
-		<div class="menu-item">
+		<div class="dinner item">
 			<h3>Fish and Chips</h3>
 			<h3>one piece 15 | two pice 19</h3>
 			<p>west coast ling cod, ale battered,house-made tartar sauce</p>
 		</div>
 	</div>
 
-	<div class="menu drink">
+	<div class="drink">
 		<h2>Drink</h2>
-		<h3>LOCAL & CRAFT TAPS</h3>
+		<h3 class="heading">LOCAL & CRAFT TAPS</h3>
 		<h3>Half Pint 5¼ – 20oz Pint 7¼</h3>
 		<h3>Bridge Bourbon Blood Orange Wheat Ale (5.5% abv.)</h3>
 		<h3>Bridge Side Cut NE IPA(7.3% abv.)</h3>
@@ -112,7 +115,7 @@
 </div>
 
 <div class="wrapper">
-	<section>
+	<section class="access">
 		<h1>Access</h1>
 		<h2>111 W Cordova St. Vancouver, BC</h2>
 		<img src="img/map.png" alt="map">
@@ -120,24 +123,42 @@
 </div>
 
 <div class="wrapper">
-	<section>
+	<div class="background"></div>
+	<section class="contact">
 		<h1>Contact us</h1>
-		<form action="">
-		<input type="text" name="name" placeholder="Name"><br>
-		<input type="text" name="e-mail" placeholder="E-mail">
-		<textarea name="message" cols="30" rows="10"></textarea>
+		<form action="" method="post">
+			<div class="contact name">
+				<input type="text" name="name" placeholder="Name">
+			</div>
+			<div class="contact email">
+				<input type="text" name="e-mail" placeholder="E-mail">
+			</div>
+			<div class="contact message">
+				<textarea name="message" cols="30" rows="10"></textarea>
+			</div>
 		</form>
+		<div class="contact button">
+			<button type="button" class="botton--form">send</button>
+		</div>
 	</section>
 </div>
 
 <footer>
-	<i class="fas fa-phone"></i>
-	<p>(604) 111 1111</p>
-	<i class="far fa-envelope"></i>
-	<p>British@british.com</p>
-	<i class="fab fa-facebook-f"></i>
-	<i class="fab fa-twitter"></i>
-	<i class="fab fa-instagram"></i>
+	<div class="phone">
+		<i class="fas fa-phone"></i>
+		<p>(604) 111 1111</p>
+		<span>/</span>
+	</div>
+	<div class="email">
+		<i class="far fa-envelope"></i>
+		<p>British@british.com</p>
+		<span>/</span>
+	</div>
+	<div class="sns">
+		<i class="fab fa-facebook-f"></i>
+		<i class="fab fa-twitter"></i>
+		<i class="fab fa-instagram"></i>
+	</div>
 </footer>
 
 </body>
