@@ -1,0 +1,67 @@
+.contact {
+
+	.background {
+		background-color: $background-color-back;
+		width: 783px;
+		height: 448px;
+		position: relative;
+		margin: $contact-margin-form-background;
+	}
+
+	.form {
+		border: 1px solid $background-color-back;
+		background-color: $background-color-front;
+		width: 756px;
+		height: 491px;
+		padding-left: 20px;
+		position: absolute;
+		bottom: 10%;
+		left: 8%;
+		z-index: 2;
+
+		h1 {
+			font-size: $font-size-h1;
+			font-family: $serif;
+			margin-top: $contact-margin-top-input;
+		}
+		input{
+			margin-top: $contact-margin-top-input;
+		}
+
+		input[type="text"], input[type="email"], textarea {
+			background-color: $background-color-form;
+			font: 1em $sans-base;
+			border: 0;
+		}
+
+		input[placeholder="Name"], input[placeholder="E-mail"], textarea[placeholder="Message"] {
+			color: $font-color-placeholder;
+			font-size: $font-base-size;
+			font-weight: lighter;
+			padding: 20px;
+		}
+
+		input[type="text"], input[type="email"] {
+			width: 422px;
+			height: 53px;
+		}
+
+		textarea {
+			width: 595px;
+			height: 133px;
+			margin: $contact-margin-textarea;
+		}
+				
+		button[type="submit"] {
+			background-color: $background-color-back;
+			border: 0;
+			border-radius: 0;
+			color: $font-color-white;
+			font-size: $font-size-button;
+			font-weight: bold;
+			text-align: center;
+			width: 237px;
+			height: 60px;			
+		}
+	}
+}

@@ -1,54 +1,61 @@
-header {
-	width: 80%;
+.wrapper-header {
+	width: $background-front-width;
+	height: $background-front-header-height;
+	margin-left: $background-front-margin-left;
 	background-color: $background-color-front;
 	margin-top: 38px;
+	position: relative;
 
 	.icon {
 		position: absolute;
-		top: 20%;
-		left: 20%;
+		top: 12%;
+		left: 2%;
 	}
 
 	.header-nav {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		width: 600px;
-		height: 30px;
-		margin: 0 auto;
+		position: relative;
+		margin-top: 2%;
+		margin-left: 0;
 		padding: 0;
 
-		li {
-			position: relative;
-
-			a {
-				display: block;
-				width: 170px;
-				height: 60px;
-				text-align: center;
-				color: $font-color-black;
-				background-color: $background-color-front;
-				transition: 0.5s;
-			}
-		}
-
-		li :hover > a {
-			color: $font-color-white;
-			background-color: $background-color-back;
-		}
-
-		li ul {
-			top: 40px;
-			left: -40px;
-			position: absolute;
+		.lists {
 
 			li {
-				overflow: hidden;
-				height: 0;
-				transition: 0.2s;
+				display: inline-block;
+				position: relative;
 
 				a {
-					border-top: 3px solid $background-color-back;
+					display: block;
+					width: 170px;
+					height: 60px;
+					text-align: center;
+					color: $font-color-black;
+					background-color: $background-color-front;
+					transition: 0.5s;
+				}
+			}
+
+			&>li:hover > a {
+				color: $font-color-white;
+				background-color: $background-color-back;
+			}
+
+			li ul {
+				top: 40px;
+				left: -40px;
+				position: absolute;
+
+				li {
+					overflow: hidden;
+					height: 0;
+					transition: 0.2s;
+
+					a {
+						border-top: 3px solid $background-color-back;
+					}
 				}
 			}
 		}

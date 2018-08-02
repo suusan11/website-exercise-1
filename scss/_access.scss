@@ -1,0 +1,23 @@
+.access {
+	margin-left: $section-margin-left;
+
+	h1 {
+	  font-size: $font-size-h1;
+	  font-family: $serif;
+	  color: $font-color-black;
+	  margin-top: $section-margin-top-h1;
+	  }
+	
+	h2 {
+		font-size: $font-size-h2;
+		margin: $access-margin-h2;
+	}
+	
+	.map {
+		text-align: center;
+
+		img {
+			width: 80%;
+		}
+	}
+}

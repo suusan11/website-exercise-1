@@ -5,10 +5,46 @@ $font-color-white: #FFFFFF;
 //font-size
 $font-base-size: 20px;
 $font-size-h1: 50px;
-$font-size-h2: 40px;
+$font-size-h2: 30px;
+$font-size-empha-h2: 40px;
 $font-size-p: 16px;
+$font-size-button: 30px;
 
 
 //background-color
 $background-color-back: #784C2C;
-$background-color-front: #784C2C;
+$background-color-front: #FFFFFF;
+
+//background-front
+$background-front-width: 95%;
+$background-front-header-height: 80px;
+$background-front-margin-left: 35px;
+$background-front-footer-height: 200px;
+
+//section
+$section-margin-left: 38px;
+$section-margin-top-h1: 8%;
+
+//section menu
+$menu-margin-h2: 50px 0 20px 0;
+$menu-margin-right-h3: 15px;
+$menu-margin-bottom-item: 30px;
+$menu-margin-bottom-last-item: 0px;
+$menu-margin-bottom-drink-item: 10px;
+
+//section access
+$access-margin-h2: 50px 0;
+//$access-margin-right-img: 100px;
+
+//section contact
+$contact-margin-form-background: 250px 0 0 400px;
+$background-color-form: #F6E0C4;
+$contact-margin-top-input: 20px;
+$contact-margin-textarea: 20px 0;
+$font-color-placeholder: #989595;
+
+//footer
+$footer-margin-bottom-item: 15px;
+$footer-margin-right-icon: 16px;
+$footer-margin-span-sns: 0 23px;
+$footer-color-circle: #6E6E6E;

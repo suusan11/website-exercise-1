@@ -1,0 +1,74 @@
+.menu {
+	margin-left: $section-margin-left;
+	height: 100%;
+	background-color: $background-color-front;
+
+	h1 {
+	  font-size: $font-size-h1;
+	  font-family: $serif;
+	  color: $font-color-black;
+	  margin-top: $section-margin-top-h1;
+	  }
+
+	.meal {
+
+		h2 {
+			font-family: $serif-empha;
+			font-size: $font-size-empha-h2;
+			margin: $menu-margin-h2;
+		}
+
+		.item {
+			display: flex;
+			justify-content: flex-start;
+			margin-bottom: $menu-margin-bottom-item;
+
+			&:last-child {
+				margin-bottom: $menu-margin-bottom-last-item;
+			}
+
+			h3 {
+				margin-right: $menu-margin-right-h3;
+			}
+
+			p {
+				font-weight: lighter;
+			}
+		}
+	}
+
+	.drink {
+
+		h2 {
+			font-family: $serif-empha;
+			font-size: $font-size-empha-h2;
+			margin: $menu-margin-h2;
+		}
+
+		.beer {
+			display: flex;
+			justify-content: flex-start;
+			margin-bottom: $menu-margin-bottom-item;
+
+			&>h3 {
+				margin-right: $menu-margin-right-h3;
+			}
+		}
+
+		.item {
+
+			h3 {
+				margin-bottom: $menu-margin-bottom-drink-item;
+
+				&:last-child {
+					margin-bottom: $menu-margin-bottom-last-item;
+				}	
+			}			
+		}
+
+		h3:not(.heading) {
+			font-weight: lighter;
+		}
+	}
+
+}
