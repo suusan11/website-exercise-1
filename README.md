@@ -3,7 +3,7 @@
 URL: <https://suusan11.github.io/website-exercise-1/>
 
 
-######This is a repository for exercising html and sass.
+### This is a repository for exercising html and sass.
 
 
 
@@ -13,7 +13,7 @@ URL: <https://suusan11.github.io/website-exercise-1/>
 
 
 
-######To implementation dropdown menu, I'm using only sass.
+#### To implementation dropdown menu, I'm using only sass.
 ![screen shot on dropdown menu](https://user-images.githubusercontent.com/38636923/43669351-16f013e6-9737-11e8-8cfb-53c90fa2f919.png)
 
 
