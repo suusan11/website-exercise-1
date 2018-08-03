@@ -35,40 +35,43 @@
 					background-color: $background-color-front;
 					transition: 0.1s;
 				}
-			}
 
-			&>li:hover > a {
-				color: $font-color-white;
-				background-color: $background-color-back;
-			}
-
-			li ul {
-				z-index: 2;
-				position: absolute;
-				top: 100%;
-				left: 0;
-				
-				li {
-					overflow: hidden;
-					height: 0;
-					transition: 0.5s;
-
-					a {
-						border-top: 3px solid $background-color-back;
-						border-right: 3px solid $background-color-back;
-						border-left: 3px solid $background-color-back;
-					}
-
-					&:last-child>a {
-						border-bottom: 3px solid $background-color-back;
-					}
+				&:hover > a:not(.menus) {
+					color: $font-color-white;
+					background-color: $background-color-back;
 				}
-			}
 
-			&>li:hover>ul>li {
-				overflow: visible;
-				display: block;
-				height: 60px;
+				ul {
+					z-index: 2;
+					position: absolute;
+					top: 100%;
+				
+					li {
+						overflow: hidden;
+						height: 0;
+						transition: 0.5s;
+
+						a {
+							border-top: 3px solid $background-color-back;
+							border-right: 3px solid $background-color-back;
+							border-left: 3px solid $background-color-back;
+
+							&:hover {
+								font-weight: bold;
+							}
+						}
+
+						&:last-child a {
+							border-bottom: 3px solid $background-color-back;
+						}
+					}	
+				}
+
+				&:hover>ul>li {
+					overflow: visible;
+					display: block;
+					height: 60px;
+				}
 			}
 		}
 

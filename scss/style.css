@@ -143,7 +143,7 @@ html {
   transition: 0.1s;
 }
 
-.wrapper-header .header-nav .lists > li:hover > a {
+.wrapper-header .header-nav .lists li:hover > a:not(.menus) {
   color: #FFFFFF;
   background-color: #784C2C;
 }
@@ -152,7 +152,6 @@ html {
   z-index: 2;
   position: absolute;
   top: 100%;
-  left: 0;
 }
 
 .wrapper-header .header-nav .lists li ul li {
@@ -167,11 +166,15 @@ html {
   border-left: 3px solid #784C2C;
 }
 
-.wrapper-header .header-nav .lists li ul li:last-child > a {
+.wrapper-header .header-nav .lists li ul li a:hover {
+  font-weight: bold;
+}
+
+.wrapper-header .header-nav .lists li ul li:last-child a {
   border-bottom: 3px solid #784C2C;
 }
 
-.wrapper-header .header-nav .lists > li:hover > ul > li {
+.wrapper-header .header-nav .lists li:hover > ul > li {
   overflow: visible;
   display: block;
   height: 60px;
