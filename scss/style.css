@@ -123,9 +123,7 @@ html {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  position: relative;
-  margin-top: 2%;
-  margin-left: 0;
+  margin: 1% 1% 0 0;
   padding: 0;
 }
 
@@ -136,12 +134,13 @@ html {
 
 .wrapper-header .header-nav .lists li a {
   display: block;
-  width: 170px;
+  width: 160px;
   height: 60px;
   text-align: center;
+  line-height: 2.8;
   color: #464646;
   background-color: #FFFFFF;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 
 .wrapper-header .header-nav .lists > li:hover > a {
@@ -150,19 +149,32 @@ html {
 }
 
 .wrapper-header .header-nav .lists li ul {
-  top: 40px;
-  left: -40px;
+  z-index: 2;
   position: absolute;
+  top: 100%;
+  left: 0;
 }
 
 .wrapper-header .header-nav .lists li ul li {
   overflow: hidden;
   height: 0;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 .wrapper-header .header-nav .lists li ul li a {
   border-top: 3px solid #784C2C;
+  border-right: 3px solid #784C2C;
+  border-left: 3px solid #784C2C;
+}
+
+.wrapper-header .header-nav .lists li ul li:last-child > a {
+  border-bottom: 3px solid #784C2C;
+}
+
+.wrapper-header .header-nav .lists > li:hover > ul > li {
+  overflow: visible;
+  display: block;
+  height: 60px;
 }
 
 .wrapper {
@@ -393,12 +405,27 @@ html {
   margin: 0 23px;
 }
 
-.wrapper-footer .sns .circle i {
+.wrapper-footer .sns .circle .fab {
   position: absolute;
-  top: 20%;
-  left: 25%;
-  z-index: 2;
   width: 10px;
   height: 10px;
   color: #FFFFFF;
+}
+
+.wrapper-footer .sns .circle .fa-facebook-f {
+  top: 20%;
+  left: 30%;
+  z-index: 2;
+}
+
+.wrapper-footer .sns .circle .fa-twitter {
+  top: 20%;
+  left: 20%;
+  z-index: 2;
+}
+
+.wrapper-footer .sns .circle .fa-instagram {
+  top: 20%;
+  left: 23%;
+  z-index: 2;
 }
