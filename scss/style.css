@@ -161,9 +161,8 @@ html {
 }
 
 .wrapper-header .header-nav .lists li ul li a {
-  border-top: 3px solid #784C2C;
-  border-right: 3px solid #784C2C;
-  border-left: 3px solid #784C2C;
+  border: 3px solid #784C2C;
+  border-bottom: 0;
 }
 
 .wrapper-header .header-nav .lists li ul li a:hover {
